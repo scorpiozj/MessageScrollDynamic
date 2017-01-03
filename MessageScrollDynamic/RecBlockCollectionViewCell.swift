@@ -9,5 +9,7 @@
 import UIKit
 
 class RecBlockCollectionViewCell: UICollectionViewCell {
-    
+    static func CellIdentifier()->String {
+        return "RecBlockCollectionViewCellIdentifier"
+    }
 }
