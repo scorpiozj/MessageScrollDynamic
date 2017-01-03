@@ -46,11 +46,16 @@ class DynamicCollectionViewFlowLayout: UICollectionViewFlowLayout {
     override func shouldInvalidateLayout(forBoundsChange newBounds: CGRect) -> Bool {
         let scrollView = self.collectionView! as? UIScrollView
         let delta = newBounds.origin.y - (scrollView!.bounds.origin.y)
+        let touchLocation = scrollView?.panGestureRecognizer.location(in: scrollView)
         for behavior  in (self.dynamicAnimator?.behaviors)! {
             if let attach = behavior as? UIAttachmentBehavior{
+                let anchorPoint = attach.anchorPoint
+                let distanceFromTouch = fabs((touchLocation?.y)! - anchorPoint.y)
+                let scrollResistance = distanceFromTouch / 500.0
+                
                 let attri = attach.items.first as? UICollectionViewLayoutAttributes
                 var center = attri!.center
-                center.y += delta
+                center.y += min(delta * scrollResistance, delta)
                 attri!.center = center
                 
                 self.dynamicAnimator!.updateItem(usingCurrentState: attri as! UIDynamicItem)
