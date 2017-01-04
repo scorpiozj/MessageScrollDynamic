@@ -16,6 +16,7 @@
 		DE2AA5DD1E1A2441001C003B /* MessageScrollDynamicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2AA5DC1E1A2441001C003B /* MessageScrollDynamicUITests.swift */; };
 		DE2AA5EB1E1A2777001C003B /* DynamicCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2AA5EA1E1A2777001C003B /* DynamicCollectionViewFlowLayout.swift */; };
 		DE2AA5ED1E1A2817001C003B /* RecBlockCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2AA5EC1E1A2817001C003B /* RecBlockCollectionViewCell.swift */; };
+		DE99CB691E1CA2C5007A6F7C /* UIColor+ApplicationSpecific.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99CB681E1CA2C5007A6F7C /* UIColor+ApplicationSpecific.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DE2AA5DE1E1A2441001C003B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE2AA5EA1E1A2777001C003B /* DynamicCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		DE2AA5EC1E1A2817001C003B /* RecBlockCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecBlockCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE99CB681E1CA2C5007A6F7C /* UIColor+ApplicationSpecific.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ApplicationSpecific.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				DE2AA5BC1E1A2440001C003B /* AppDelegate.swift */,
 				DE2AA5BE1E1A2440001C003B /* ViewController.swift */,
 				DE2AA5EA1E1A2777001C003B /* DynamicCollectionViewFlowLayout.swift */,
+				DE99CB681E1CA2C5007A6F7C /* UIColor+ApplicationSpecific.swift */,
 				DE2AA5EC1E1A2817001C003B /* RecBlockCollectionViewCell.swift */,
 				DE2AA5C01E1A2440001C003B /* Main.storyboard */,
 				DE2AA5C31E1A2440001C003B /* Assets.xcassets */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE99CB691E1CA2C5007A6F7C /* UIColor+ApplicationSpecific.swift in Sources */,
 				DE2AA5BF1E1A2440001C003B /* ViewController.swift in Sources */,
 				DE2AA5BD1E1A2440001C003B /* AppDelegate.swift in Sources */,
 				DE2AA5ED1E1A2817001C003B /* RecBlockCollectionViewCell.swift in Sources */,
@@ -511,6 +515,7 @@
 				DE2AA5E31E1A2441001C003B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE2AA5E41E1A2441001C003B /* Build configuration list for PBXNativeTarget "MessageScrollDynamicTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +524,7 @@
 				DE2AA5E61E1A2441001C003B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE2AA5E71E1A2441001C003B /* Build configuration list for PBXNativeTarget "MessageScrollDynamicUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +533,7 @@
 				DE2AA5E91E1A2441001C003B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
