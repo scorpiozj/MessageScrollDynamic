@@ -21,17 +21,14 @@ class DynamicCollectionViewFlowLayout: UICollectionViewFlowLayout {
             let contentSize = self.collectionViewContentSize
             let itemArray = super.layoutAttributesForElements(in: CGRect(x: 0, y: 0, width: contentSize.width, height: contentSize.height))
             
-            for item in itemArray! {
-                if let attri = item as? UICollectionViewLayoutAttributes {
-                    let spring = UIAttachmentBehavior.init(item: attri, attachedToAnchor: attri.center)
-                    spring.length = 0
-                    spring.damping = 0.5
-                    spring.frequency = 0.8
-                    self.dynamicAnimator!.addBehavior(spring)
-                } else {
-                    print("should not happen")
-                }
+            for attri in itemArray! {
+                let spring = UIAttachmentBehavior.init(item: attri, attachedToAnchor: attri.center)
+                spring.length = 0
+                spring.damping = 0.5
+                spring.frequency = 0.8
+                self.dynamicAnimator!.addBehavior(spring)
             }
+            
         }
     }
     
